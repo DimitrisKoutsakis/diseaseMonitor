@@ -1,12 +1,3 @@
 Compile: make diseaseMonitor
-Run: ./diseasMonitor -p <patientRecordsFile> -h1 <diseaseHashtableNumOfEntries> -h2 <countryHashtableNumOfEntries> -b <bucketSize>
-	-> Η συγκεκριμένη σειρά τον παραμέτρων δεν ειναι υποχρεωτικη
 
-Διευκρινήσεις:
-	-> Κάθε patientRecord υπάρχει μία φορα στη μνήμη και οι δομές δεδομένων έχουν πρόσβαση σε αυτο μέσω Pointers
-	-> Ολες οι ημερομηνίες αποθηκεύονται ως ακέραιοι (int) με την μορφή YEAR-MONTH-DAY (π.χ. 27-03-2020 -> 20200327) για να διατηρείται η "βαρύτητα" τους
-	-> Το exitDate σε περίπτωση που ο ασθενής δεν εχει πάρει εξητήριο παίρνει την τιμή 0
-	-> Στα ερωτήματα που έχει δωθεί date1, date2 ελέγχεται αν ο ασθενής έχει date1 < entryDate < date2
-	-> Το αναγνωριστικό των ασθενώ είναι μόνο το recordID τους
-	-> Για το Balanced BST έχει υλοποιηθεί AVL Tree οπου κάθε κόμβος κραταει μια λίστα απο ασθενείς με το ίδιο entryDate
-	-> Κάθε Bucket του Hash Table περιέχει μια λίστα απο δείκτες σε δέντρα (και τα κλειδιά) με την ίδια τιμή hash
+Run: ./diseasMonitor -p <patientRecordsFile> -h1 <diseaseHashtableNumOfEntries> -h2 <countryHashtableNumOfEntries> -b <bucketSize>
