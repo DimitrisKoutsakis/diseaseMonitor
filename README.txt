@@ -1,6 +1,3 @@
-ΕΡΓΑΣΙΑ 1
-Δημήτριος Κουτσάκης 1115201700061
-
 Compile: make diseaseMonitor
 Run: ./diseasMonitor -p <patientRecordsFile> -h1 <diseaseHashtableNumOfEntries> -h2 <countryHashtableNumOfEntries> -b <bucketSize>
 	-> Η συγκεκριμένη σειρά τον παραμέτρων δεν ειναι υποχρεωτικη
